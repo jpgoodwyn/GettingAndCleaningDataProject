@@ -47,5 +47,5 @@ write.table(tidy_data, "tidy.txt")
 library(data.table)
 tidy <- data.table(tidy_data)
 means <- tidy[,lapply(.SD, mean), by=c("SubjectID", "ActivityLabel")]
-write.table(means, "tidy_data_means.txt")
+write.table(means, "tidy_data_means.txt", row.name = FALSE)
 }
