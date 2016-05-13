@@ -10,17 +10,21 @@ This Code Book describes the variables, data, transformations, and work performe
 
 ## Activities
 
-* `WALKING` (value `1`): subject was walking during the test
-* `WALKING_UPSTAIRS` (value `2`): subject was walking up a staircase during the test
-* `WALKING_DOWNSTAIRS` (value `3`): subject was walking down a staircase during the test
-* `SITTING` (value `4`): subject was sitting during the test
-* `STANDING` (value `5`): subject was standing during the test
-* `LAYING` (value `6`): subject was laying down during the test
+6 different activities were recorded for all 30 of the participants.
+
+* `WALKING` (value `1`): subject was walking
+* `WALKING_UPSTAIRS` (value `2`): subject was walking up a staircase
+* `WALKING_DOWNSTAIRS` (value `3`): subject was walking down a staircase
+* `SITTING` (value `4`): subject was sitting
+* `STANDING` (value `5`): subject was standing
+* `LAYING` (value `6`): subject was laying down
 
 ## Measurements
 
-* `SubjectID`
-* `ActivityLabel`
+Removed the parentheses from each measurement variable. The data was subset to only include mean and standard deviation calculations.
+
+The original "features_info.txt" file has the complete background on how and why each of the following measurements was recorded.
+
 * `tBodyAcc-mean-X`
 * `tBodyAcc-mean-Y`
 * `tBodyAcc-mean-Z`
